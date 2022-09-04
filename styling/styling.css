@@ -1,0 +1,279 @@
+body{
+    margin: 0px;
+    padding: 0px; 
+    height:auto ;
+    width: auto;
+    animation: fillanimation 2.5s 1;
+    
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+/*----------------------------- html tags css----------------------------- */
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    margin: 80px 0px 5px 0px;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #FF9551;
+    border-bottom: solid;
+    border-color: #FF9551;
+    padding-right: 70%;
+    margin-left: 20%;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    
+}
+
+p{
+    text-align: left;
+    font-family:'Montserrat', sans-serif ;
+    font-size: 0.8rem;
+}
+
+/*------------------------- left section------------------------------ */
+.left_section{
+    width: 20%; 
+    background-color: #ffd7b9;
+    text-align: center; 
+    display:inline-block;
+    overflow: hidden;
+    
+    
+}
+
+.profile-pic{
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FF9551 ;
+    transform: rotate(45deg);
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.john-cena{
+    position: relative;
+    bottom: 25px;
+    right: 25px;
+    transform: rotate(-45deg);
+    width: 200px;
+    height: 200px;
+    
+}
+
+.interest-categories{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: inherit;
+    margin-left: 20%;
+    
+    
+    
+
+}
+
+.interest-icon {
+    color: #FF9551;
+    padding-right: 10px; 
+}
+
+
+
+.contact{
+    padding-right: 50px;
+    margin-top: 225px;
+    margin-bottom: 5px;
+    
+
+}
+.contact-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 15% ;
+    gap: 1rem;
+}
+
+.contact-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    
+}
+
+
+/* -------------------right section----------------------------- */
+.right_section{
+    width: 80%;
+    background-color: #efeeed;
+    display: inline-block;
+    overflow: hidden;
+    
+     
+}
+
+.right-p{
+    text-align:center; 
+    font-family:'Montserrat', sans-serif ;
+    font-size: 0.8rem;
+    margin: 0px;
+}
+
+.right-h2{
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.experience-education-blocks{
+    display: flex;
+    flex-direction: row;   
+    gap: 5rem; 
+    margin-left: 10.5%;
+    
+}
+
+
+
+.skill-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+
+.languages{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 6%;
+    margin-bottom: 3px;
+
+}
+.softwares{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: 3px;
+}
+
+li{ 
+   list-style: none;
+   text-align:left; 
+   font-family:'Montserrat', sans-serif ;
+   font-size: 0.8rem;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   display: flex;
+   flex-direction: row;
+}
+
+.bar{
+    display: inline-block;
+    border-style: solid;
+    height: 5px;
+    width: 40%;
+    background:black;
+    border-radius: 5px;
+    margin-left: 5%;
+    
+}
+
+.bar-fill{
+    display: block;
+    height: 5px;
+    background:#FF9551;
+    border-radius: 5px;
+    animation: fillanimation 5s 1;
+    
+}
+
+.hundred{
+    max-width: 100%;
+    
+}
+
+.ninety{
+    max-width: 90%;
+}
+
+.forty{
+    max-width: 40%;
+}
+
+.fifty{
+    max-width: 50%;
+}
+
+.ten{
+    max-width: 10%;
+}
+
+/* responsive mobile web view */
+ @media(max-width: 600px ) {
+
+    .container{
+        flex-direction: column;
+    }
+
+    .left_section{
+        width: 100%;
+    }
+
+    .right_section{
+        width: 100%;
+        
+    }
+
+    .right-para{
+        margin-left: 40%;
+    }
+
+}
+
+@media(min-width: 601px ) and (max-width: 1140px){
+    .left_section{
+        width: 40%;
+    }
+
+    .right_section{
+        width: 60%;
+        
+    }
+
+}
+
+@keyframes fillanimation{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+
+
